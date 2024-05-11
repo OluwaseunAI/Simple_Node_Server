@@ -23,7 +23,7 @@ setTimeout(() => {
       res.writeHead(200, { "Content-Type": "application/json" });
       res.end(`${JSON.stringify(userData)} after ${delay2} ms delay`);
     }else if(req.url === "/files" && req.method === "GET"){
-        console.log(`Server is up after ${delay1} ms delay`);
+        console.log(`Server is up after ${reqDelay1} ms delay`);
         const details = {
           News1: "Is New York the capital of the world?",
           News2: "How do University students fare? A report by Essien Pam"
